@@ -1,0 +1,16 @@
+import React from 'react';
+import fileImage from './file.png';
+import linkImage from './link.png';
+import textImage from './text.png';
+
+function FrontScreen() {
+  return (
+    <div>
+      <img src={fileImage} alt="File" />
+      <img src={linkImage} alt="Link" />
+      <img src={textImage} alt="Text" />
+    </div>
+  );
+}
+
+export default FrontScreen;

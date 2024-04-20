@@ -1,0 +1,93 @@
+:root {
+    --background-color: #ffffff; /* Default light mode background color */
+    --text-color: #000000; /* Default light mode text color */
+  }
+  
+  .dark-mode {
+    --background-color: #1a1a1a; /* Dark mode background color */
+    --text-color: #ffffff; /* Dark mode text color */
+  }
+  .rectangle {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  
+    /* Darken the background color on hover */
+  }
+  .rectangle:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Darkened background color */
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+  }
+  
+  .rectangle {
+    width: calc(30% - 20px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin: 10px;
+  }
+  
+  .image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .rectangle {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .rectangle {
+      width: calc(100% - 20px);
+    }
+  }
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .rectangle {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  .dark-mode-button {
+    position: fixed;
+    top: 20px;
+    right: -100px; /* Start off-screen */
+    transition: right 0.5s ease;
+  }
+  
+  .dark-mode-button.active {
+    right: 20px; /* Slide in from the right */
+  }
+  
+  /* Additional styling for the button */
+  .dark-mode-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

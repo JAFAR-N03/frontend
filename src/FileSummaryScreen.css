@@ -1,0 +1,56 @@
+/* FileSummaryScreen.css */
+
+/* Container */
+.file-summary-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing between header and form */
+  }
+  
+  /* Arrow icon */
+  .arrow-icon {
+    width: 40px; /* Adjust size as needed */
+    margin-right: 10px; /* Add spacing between arrow and heading */
+  }
+  
+  /* Form sections */
+  .form-section {
+    margin-bottom: 20px; /* Add spacing between form sections */
+  }
+  
+  /* Form elements */
+  label {
+    display: block;
+    margin-bottom: 5px; /* Add spacing between label and input/select */
+  }
+  
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 5px; /* Add spacing between input/select and label */
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
